@@ -1,0 +1,6 @@
+# Clone the repository
+git clone https://github.com/armlynobinguar/Stellar-Bootcamp-2026.git
+cd stellaroid-earn
+
+# Build the contract
+soroban contract build
