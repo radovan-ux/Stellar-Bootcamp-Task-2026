@@ -1,0 +1,12 @@
+# Configure Stellar testnet
+soroban network add testnet \
+  --rpc-url https://soroban-testnet.stellar.org \
+  --network-passphrase "Test SDF Network ; September 2015"
+
+# Deploy contract
+soroban contract deploy \
+  --wasm target/wasm32-unknown-unknown/release/stellaroid_earn.wasm \
+  --source <YOUR_SECRET_KEY> \
+  --network testnet
+
+# Note the deployed contract ID from output
