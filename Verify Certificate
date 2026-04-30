@@ -1,0 +1,8 @@
+soroban contract invoke \
+  --id <CONTRACT_ID> \
+  --source <VERIFIER_SECRET_KEY> \
+  --network testnet \
+  -- \
+  verify_certificate \
+  --cert_id 0 \
+  --expected_hash <32_BYTE_HASH_IN_HEX>
