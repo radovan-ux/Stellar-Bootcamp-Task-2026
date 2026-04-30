@@ -1,0 +1,7 @@
+soroban contract invoke \
+  --id <CONTRACT_ID> \
+  --source <ANY_SECRET_KEY> \
+  --network testnet \
+  -- \
+  get_certificate \
+  --cert_id 0
