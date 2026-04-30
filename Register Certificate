@@ -1,0 +1,19 @@
+# Initialize contract (admin only)
+soroban contract invoke \
+  --id <CONTRACT_ID> \
+  --source <ADMIN_SECRET_KEY> \
+  --network testnet \
+  -- \
+  init \
+  --admin <ADMIN_PUBLIC_KEY>
+
+# Register a new certificate
+soroban contract invoke \
+  --id <CONTRACT_ID> \
+  --source <STUDENT_SECRET_KEY> \
+  --network testnet \
+  -- \
+  register_certificate \
+  --student <STUDENT_PUBLIC_KEY> \
+  --cert_hash <32_BYTE_HASH_IN_HEX> \
+  --metadata '{"degree":"BSCS","university":"UP Diliman","year":"2026"}'
